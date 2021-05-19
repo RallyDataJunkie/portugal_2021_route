@@ -272,11 +272,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="speed-estimates-9" class="section level2" number="10.3">
 <h2><span class="header-section-number">10.3</span> Speed Estimates</h2>
 <p><em>Estimates of speed along the route according to a very simple acceleration model.</em></p>
-<p>Kilometer section speeds (<em>kmtime</em> is time in seconds to complete that kilometer; <em>avspeed</em> is in km/h):</p>
+<p>Kilometer section speeds (<em>kmtime</em> is time in seconds to complete that segment; <em>avspeed</em> is in km/h):</p>
 <table>
 <thead>
 <tr class="header">
 <th align="right">kmsection</th>
+<th align="right">section_length</th>
 <th align="right">km_time</th>
 <th align="right">av_speed</th>
 <th align="right">maxspeed</th>
@@ -285,20 +286,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <tbody>
 <tr class="odd">
 <td align="right">1</td>
+<td align="right">0.99</td>
 <td align="right">71.540396</td>
-<td align="right">50.32122</td>
+<td align="right">49.81801</td>
 <td align="right">144.9991</td>
 </tr>
 <tr class="even">
 <td align="right">2</td>
+<td align="right">0.07</td>
 <td align="right">7.060554</td>
-<td align="right">509.87498</td>
+<td align="right">35.69125</td>
 <td align="right">145.0000</td>
 </tr>
 </tbody>
 </table>
 <p>Anticipated stage time: 1m 18.6s</p>
-<p>Speed profile chart: this chart shows the anticipated speed over distance into route on a per kilometer basis:</p>
+<p>Speed profile chart: this chart shows the anticipated speed over distance into route on a per kilometer basis (the green area is flat out, the pink is the sort of slow you see at a hairpin):</p>
 <p><img src="_main_files/figure-html/sub_chunk_4481-1.png" width="672" /></p>
 </div>
 <div id="elevation-and-convexity-index-into-route-9" class="section level2" number="10.4">
@@ -306,6 +309,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Elevation and significant curvature vs distance into stage:</p>
 <p><img src="_main_files/figure-html/unnamed-chunk-161-1.png" width="672" /></p>
 <p>(Note that this uses a different curvature measure to the route plots; specifically, the curvature measure used here is the convexity index.)</p>
+<p><em>Sinuosity and straightness are technical measures with specific defintions. They may or may not be that useful for route analysis in their current form. The intention is to try to find ways of identifying variously “interesting” kilometer stretches.</em></p>
 <p><img src="_main_files/figure-html/unnamed-chunk-162-1.png" width="672" /></p>
 <table class="table table-condensed">
 <caption>

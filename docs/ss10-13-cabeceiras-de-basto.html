@@ -272,11 +272,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="speed-estimates-7" class="section level2" number="8.3">
 <h2><span class="header-section-number">8.3</span> Speed Estimates</h2>
 <p><em>Estimates of speed along the route according to a very simple acceleration model.</em></p>
-<p>Kilometer section speeds (<em>kmtime</em> is time in seconds to complete that kilometer; <em>avspeed</em> is in km/h):</p>
+<p>Kilometer section speeds (<em>kmtime</em> is time in seconds to complete that segment; <em>avspeed</em> is in km/h):</p>
 <table>
 <thead>
 <tr class="header">
 <th align="right">kmsection</th>
+<th align="right">section_length</th>
 <th align="right">km_time</th>
 <th align="right">av_speed</th>
 <th align="right">maxspeed</th>
@@ -285,146 +286,169 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <tbody>
 <tr class="odd">
 <td align="right">1</td>
+<td align="right">0.99</td>
 <td align="right">37.83036</td>
-<td align="right">95.16167</td>
+<td align="right">94.21006</td>
 <td align="right">145.0000</td>
 </tr>
 <tr class="even">
 <td align="right">2</td>
+<td align="right">1.00</td>
 <td align="right">38.42588</td>
 <td align="right">93.68687</td>
 <td align="right">144.9536</td>
 </tr>
 <tr class="odd">
 <td align="right">3</td>
+<td align="right">1.00</td>
 <td align="right">32.88573</td>
 <td align="right">109.46998</td>
 <td align="right">145.0000</td>
 </tr>
 <tr class="even">
 <td align="right">4</td>
+<td align="right">1.00</td>
 <td align="right">32.44242</td>
 <td align="right">110.96583</td>
 <td align="right">145.0000</td>
 </tr>
 <tr class="odd">
 <td align="right">5</td>
+<td align="right">1.00</td>
 <td align="right">35.12181</td>
 <td align="right">102.50042</td>
 <td align="right">145.0000</td>
 </tr>
 <tr class="even">
 <td align="right">6</td>
+<td align="right">1.00</td>
 <td align="right">32.99606</td>
 <td align="right">109.10393</td>
 <td align="right">144.9995</td>
 </tr>
 <tr class="odd">
 <td align="right">7</td>
+<td align="right">1.00</td>
 <td align="right">43.28034</td>
 <td align="right">83.17864</td>
 <td align="right">144.9634</td>
 </tr>
 <tr class="even">
 <td align="right">8</td>
+<td align="right">1.00</td>
 <td align="right">31.00160</td>
 <td align="right">116.12305</td>
 <td align="right">145.0000</td>
 </tr>
 <tr class="odd">
 <td align="right">9</td>
+<td align="right">1.00</td>
 <td align="right">34.50737</td>
 <td align="right">104.32554</td>
 <td align="right">144.9985</td>
 </tr>
 <tr class="even">
 <td align="right">10</td>
+<td align="right">1.00</td>
 <td align="right">29.28456</td>
 <td align="right">122.93166</td>
 <td align="right">145.0000</td>
 </tr>
 <tr class="odd">
 <td align="right">11</td>
+<td align="right">1.00</td>
 <td align="right">37.17886</td>
 <td align="right">96.82921</td>
 <td align="right">144.9023</td>
 </tr>
 <tr class="even">
 <td align="right">12</td>
+<td align="right">1.00</td>
 <td align="right">40.78696</td>
 <td align="right">88.26350</td>
 <td align="right">144.9979</td>
 </tr>
 <tr class="odd">
 <td align="right">13</td>
+<td align="right">1.00</td>
 <td align="right">36.57659</td>
 <td align="right">98.42361</td>
 <td align="right">144.9999</td>
 </tr>
 <tr class="even">
 <td align="right">14</td>
+<td align="right">1.00</td>
 <td align="right">35.19299</td>
 <td align="right">102.29311</td>
 <td align="right">144.9968</td>
 </tr>
 <tr class="odd">
 <td align="right">15</td>
+<td align="right">1.00</td>
 <td align="right">31.04411</td>
 <td align="right">115.96403</td>
 <td align="right">144.9829</td>
 </tr>
 <tr class="even">
 <td align="right">16</td>
+<td align="right">1.00</td>
 <td align="right">33.42652</td>
 <td align="right">107.69893</td>
 <td align="right">145.0000</td>
 </tr>
 <tr class="odd">
 <td align="right">17</td>
+<td align="right">1.00</td>
 <td align="right">33.33042</td>
 <td align="right">108.00944</td>
 <td align="right">144.9992</td>
 </tr>
 <tr class="even">
 <td align="right">18</td>
+<td align="right">1.00</td>
 <td align="right">34.21745</td>
 <td align="right">105.20948</td>
 <td align="right">145.0000</td>
 </tr>
 <tr class="odd">
 <td align="right">19</td>
+<td align="right">1.00</td>
 <td align="right">31.88981</td>
 <td align="right">112.88873</td>
 <td align="right">144.9986</td>
 </tr>
 <tr class="even">
 <td align="right">20</td>
+<td align="right">1.00</td>
 <td align="right">29.63321</td>
 <td align="right">121.48532</td>
 <td align="right">145.0000</td>
 </tr>
 <tr class="odd">
 <td align="right">21</td>
+<td align="right">1.00</td>
 <td align="right">32.02428</td>
 <td align="right">112.41470</td>
 <td align="right">145.0000</td>
 </tr>
 <tr class="even">
 <td align="right">22</td>
+<td align="right">1.00</td>
 <td align="right">33.58172</td>
 <td align="right">107.20117</td>
 <td align="right">145.0000</td>
 </tr>
 <tr class="odd">
 <td align="right">23</td>
+<td align="right">0.21</td>
 <td align="right">12.02954</td>
-<td align="right">299.26341</td>
+<td align="right">62.84532</td>
 <td align="right">145.0000</td>
 </tr>
 </tbody>
 </table>
 <p>Anticipated stage time: 12m 48.7s</p>
-<p>Speed profile chart: this chart shows the anticipated speed over distance into route on a per kilometer basis:</p>
+<p>Speed profile chart: this chart shows the anticipated speed over distance into route on a per kilometer basis (the green area is flat out, the pink is the sort of slow you see at a hairpin):</p>
 <p><img src="_main_files/figure-html/sub_chunk_5516-1.png" width="672" /></p>
 </div>
 <div id="elevation-and-convexity-index-into-route-7" class="section level2" number="8.4">
@@ -432,6 +456,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Elevation and significant curvature vs distance into stage:</p>
 <p><img src="_main_files/figure-html/unnamed-chunk-129-1.png" width="672" /></p>
 <p>(Note that this uses a different curvature measure to the route plots; specifically, the curvature measure used here is the convexity index.)</p>
+<p><em>Sinuosity and straightness are technical measures with specific defintions. They may or may not be that useful for route analysis in their current form. The intention is to try to find ways of identifying variously “interesting” kilometer stretches.</em></p>
 <p><img src="_main_files/figure-html/unnamed-chunk-130-1.png" width="672" /></p>
 <table class="table table-condensed">
 <caption>
